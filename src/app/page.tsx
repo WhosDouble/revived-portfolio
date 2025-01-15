@@ -50,7 +50,7 @@ export default function Home() {
       y: mousePosition.y - 75,
       backgroundColor: "#FFEB00",
       boxShadow: "0 0 10px rgba(255, 255, 255, 0.8)", // Glow effect
-      mixBlendMode: "multiply",
+      mixBlendMode: "difference",
       clipPath: "circle(50%)",
       transition: {
         type: "smooth",
