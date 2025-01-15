@@ -9,7 +9,7 @@ export default function ChangeTwo(props: any) {
         className="sm:mb-10 text-center text-5xl z-10 font-bold text-[#eee] self-center"
       >
         <RevealLinks
-          size={"text-3xl md:text-5xl lg:text-6xl"}
+          size={"text-3xl md:text-5xl lg:text-6xl cursor-none"}
           word={"< Projects >"}
         />
       </h1>
