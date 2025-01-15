@@ -13,7 +13,7 @@ export default function AboutMe(props: any) {
         className="sm:mb-10 text-center text-5xl self-center font-bold text-[#eee] z-10"
       >
         <RevealLinks
-          size={"text-3xl md:text-5xl lg:text-6xl"}
+          size={"text-3xl md:text-5xl lg:text-6xl cursor-none"}
           word={"<About>"}
         />
       </h2>
@@ -120,7 +120,7 @@ export default function AboutMe(props: any) {
         />
       </h2>
 
-      <div className="flex justify-center gap-10 m-auto">
+      <div className="flex justify-center gap-10 m-auto cursor-none">
         <div className="flex gap-14 relative justify-center">
           <motion.img
             onMouseEnter={props.drag}
