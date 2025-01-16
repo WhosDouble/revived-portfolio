@@ -66,7 +66,10 @@ export default function AboutMe(props: any) {
         >
           WHAT DO I ADD?
         </h2>
-        <div className="flex justify-center w-full gap-16 mb-16">
+        <div
+          id="wavy-border"
+          className="flex justify-center w-full gap-16 mb-16"
+        >
           <div className="w-full max-w-[500px]">
             <h2 className="text-left text-lg font-bold pb-5">
               Front-End Expertise
@@ -115,7 +118,7 @@ export default function AboutMe(props: any) {
         className="text-center text-5xl self-center font-bold text-[#eee] pb-10"
       >
         <RevealLinks
-          size={"text-3xl md:text-4xl lg:text-5xl"}
+          size={"text-3xl md:text-4xl lg:text-5xl cursor-none"}
           word={"<TechStack>"}
         />
       </h2>
@@ -128,7 +131,8 @@ export default function AboutMe(props: any) {
             drag
             dragConstraints={{ top: -5, left: -5, bottom: 5, right: 5 }}
             dragTransition={{ bounceDamping: 10, bounceStiffness: 600 }}
-            className=" w-20 "
+            className=" w-20"
+            onDragStart={(e) => e.preventDefault()}
             src="https://skillicons.dev/icons?i=react"
           />
           <motion.img
@@ -137,8 +141,9 @@ export default function AboutMe(props: any) {
             drag
             dragConstraints={{ top: -5, left: -5, bottom: 5, right: 5 }}
             dragTransition={{ bounceDamping: 10, bounceStiffness: 600 }}
-            className=" w-20 "
+            className=" w-20"
             src="https://skillicons.dev/icons?i=svelte"
+            onDragStart={(e) => e.preventDefault()}
           />
           <motion.img
             onMouseEnter={props.drag}
@@ -146,8 +151,9 @@ export default function AboutMe(props: any) {
             drag
             dragConstraints={{ top: -5, left: -5, bottom: 5, right: 5 }}
             dragTransition={{ bounceDamping: 10, bounceStiffness: 600 }}
-            className="w-20 "
+            className="w-20"
             src="https://skillicons.dev/icons?i=tailwindcss"
+            onDragStart={(e) => e.preventDefault()}
           />
           <motion.img
             onMouseEnter={props.drag}
@@ -155,8 +161,9 @@ export default function AboutMe(props: any) {
             drag
             dragConstraints={{ top: -5, left: -5, bottom: 5, right: 20 }}
             dragTransition={{ bounceDamping: 10, bounceStiffness: 600 }}
-            className="w-20 "
+            className="w-20"
             src="https://skillicons.dev/icons?i=javascript"
+            onDragStart={(e) => e.preventDefault()}
           />
           <motion.img
             onMouseEnter={props.drag}
@@ -164,8 +171,9 @@ export default function AboutMe(props: any) {
             drag
             dragConstraints={{ top: -5, left: -5, bottom: 5, right: 5 }}
             dragTransition={{ bounceDamping: 10, bounceStiffness: 600 }}
-            className="w-20 "
+            className="w-20"
             src="https://skillicons.dev/icons?i=typescript"
+            onDragStart={(e) => e.preventDefault()}
           />
           <motion.img
             onMouseEnter={props.drag}
@@ -173,8 +181,9 @@ export default function AboutMe(props: any) {
             drag
             dragConstraints={{ top: -5, left: -5, bottom: 5, right: 5 }}
             dragTransition={{ bounceDamping: 10, bounceStiffness: 600 }}
-            className="w-20 "
+            className="w-20"
             src="https://skillicons.dev/icons?i=git"
+            onDragStart={(e) => e.preventDefault()}
           />
           <motion.img
             onMouseEnter={props.drag}
@@ -182,8 +191,9 @@ export default function AboutMe(props: any) {
             drag
             dragConstraints={{ top: -5, left: -5, bottom: 5, right: 5 }}
             dragTransition={{ bounceDamping: 10, bounceStiffness: 600 }}
-            className="w-20 "
+            className="w-20"
             src="https://skillicons.dev/icons?i=github"
+            onDragStart={(e) => e.preventDefault()}
           />
           <motion.img
             onMouseEnter={props.drag}
@@ -191,8 +201,9 @@ export default function AboutMe(props: any) {
             drag
             dragConstraints={{ top: -5, left: -5, bottom: 5, right: 5 }}
             dragTransition={{ bounceDamping: 10, bounceStiffness: 600 }}
-            className="w-20 "
+            className="w-20"
             src="https://skillicons.dev/icons?i=html"
+            onDragStart={(e) => e.preventDefault()}
           />
           <motion.img
             onMouseEnter={props.drag}
@@ -200,8 +211,9 @@ export default function AboutMe(props: any) {
             drag
             dragConstraints={{ top: -5, left: -5, bottom: 5, right: 5 }}
             dragTransition={{ bounceDamping: 10, bounceStiffness: 600 }}
-            className="w-20 "
+            className="w-20"
             src="https://skillicons.dev/icons?i=css"
+            onDragStart={(e) => e.preventDefault()}
           />
         </div>
       </div>
