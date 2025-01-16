@@ -2,24 +2,46 @@ import { motion } from "framer-motion";
 
 function ContactMe(props: any) {
   return (
-    <div className="flex flex-col justify-center items-center w-full p-10 pt-24 pb-28 gap-10 bg-[#175f74] dark:bg-[#020f1f]">
-      <div className="flex gap-8 items-center">
-        <h1 className=" text-gray-400 text-7xl font-bold">CONTACT ME!</h1>
-        <a href="mailto:rangocode23@gmail.com">
-          <motion.button
-            whileTap={{ scale: 0.9 }}
-            whileHover={{ scale: 1.1 }}
-            className="bg-[#508C9B] p-5 cursor-none text-[#eee] font-semibold rounded-full"
-          >
-            Send Email
-          </motion.button>
-        </a>
-      </div>
-      <div className="">
-        <h2 className="text-white">
-          you've made it to the bottom of the ocean congrats
-        </h2>
-      </div>
+    <div className=" bg-[#175f74] dark:bg-[#020f1f]">
+      <motion.div
+        drag
+        style={{ transform: "rotate(-4deg)" }}
+        className="w-[650px] bg-white p-3 border border-[#ccc] text-center inline-block m-5 relative "
+      >
+        <img
+          className="w-full mt-3 h-auto block"
+          src="/mountain.png"
+          alt="image of yours truly"
+          onDragStart={(e) => e.preventDefault()}
+        />
+        <p className="font-bold pt-4 text-xl">this is my blah blah blah</p>
+      </motion.div>
+      <motion.div
+        drag
+        style={{ transform: "rotate(-4deg)" }}
+        className="w-[650px] bg-white p-3 border border-[#ccc] text-center inline-block m-5 relative "
+      >
+        <img
+          className="w-full mt-3 h-auto block"
+          src="/mountain.png"
+          alt="image of yours truly"
+          onDragStart={(e) => e.preventDefault()}
+        />
+        <p className="font-bold pt-4 text-xl">this is my blah blah blah</p>
+      </motion.div>
+      <motion.div
+        drag
+        style={{ transform: "rotate(-4deg)" }}
+        className="w-[650px] bg-white p-3 border border-[#ccc] text-center inline-block m-5 relative "
+      >
+        <img
+          className="w-full mt-3 h-auto block"
+          src="/mountain.png"
+          alt="image of yours truly"
+          onDragStart={(e) => e.preventDefault()}
+        />
+        <p className="font-bold pt-4 text-xl">this is my blah blah blah</p>
+      </motion.div>
     </div>
   );
 }
