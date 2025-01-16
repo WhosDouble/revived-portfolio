@@ -5,18 +5,25 @@ import Confetti from "react-confetti";
 const Polaroid = (props: any) => {
   const [confettiOn, setConfettiOn] = useState(false);
   const [fadeOut, setFadeOut] = useState(false);
-  const [width, setWidth] = useState(window.innerWidth);
-  const [height, setHeight] = useState(window.innerHeight);
+  const [width, setWidth] = useState(0);
+  const [height, setHeight] = useState(0);
 
   useEffect(() => {
-    const handleResize = () => {
+    if (typeof window !== "undefined") {
       setWidth(window.innerWidth);
       setHeight(window.innerHeight);
-    };
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
+
+      const handleResize = () => {
+        setWidth(window.innerWidth);
+        setHeight(window.innerHeight);
+      };
+
+      window.addEventListener("resize", handleResize);
+
+      return () => {
+        window.removeEventListener("resize", handleResize);
+      };
+    }
   }, []);
 
   const handleDragStart = () => {
