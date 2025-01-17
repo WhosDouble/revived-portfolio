@@ -11,9 +11,15 @@ html {
   background-color: #eee;
 }
 
+html {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, Helvetica, sans-serif;
-  overflow-x: hidden;
 }
 
 @media (max-width: 1100px) {

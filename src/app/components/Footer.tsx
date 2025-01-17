@@ -11,7 +11,7 @@ export default function Footer(props: any) {
         <rect
           x="0"
           y="0"
-          width="1920"
+          width="100%"
           height="300"
           fill={props.mode ? "rgb(2, 15, 31)" : "rgb(23, 95, 116)"}
         ></rect>
