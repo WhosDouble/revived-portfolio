@@ -31,7 +31,7 @@ export default function ChangeOne(props: any) {
         I'm{" "}
         <RevealLinks
           size={"text-4xl sm:text-5xl md:text-7xl lg:text-8xl cursor-none"}
-          word="devon"
+          word="rango"
         />
       </h1>
       <p className="text-stone-200 z-10 p-6 text-center cursor-none">
