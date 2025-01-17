@@ -15,7 +15,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 export default function Home() {
-  const [toggleDarkMode, setToggleDarkMode] = useState<boolean>(false);
+  const [toggleDarkMode, setToggleDarkMode] = useState<boolean>(true);
 
   useEffect(() => {
     const savedMode = localStorage.getItem("toggleDarkMode");

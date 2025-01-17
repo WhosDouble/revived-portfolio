@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 
 import RevealLinks from "./FramerMotion/FlipWords";
+import TechStackLogos from "./TechStackLogos";
+import TechMarquee from "./StackMarquee";
 
 export default function AboutMe(props: any) {
   const deepWater = props.mode ? "rgb(2, 15, 31)" : "rgb(23, 95, 116)";
@@ -67,7 +69,7 @@ export default function AboutMe(props: any) {
           WHAT DO I ADD?
         </h2>
         <div
-          id="wavy-border"
+          id="triple-info"
           className="flex justify-center w-full gap-16 mb-16"
         >
           <div className="w-full max-w-[500px]">
@@ -122,100 +124,12 @@ export default function AboutMe(props: any) {
           word={"<TechStack>"}
         />
       </h2>
+      <div className="block lg:hidden">
+        <TechMarquee />
+      </div>
 
-      <div className="flex justify-center gap-10 m-auto cursor-none">
-        <div className="flex gap-14 relative justify-center">
-          <motion.img
-            onMouseEnter={props.drag}
-            onMouseLeave={props.leave}
-            drag
-            dragConstraints={{ top: -5, left: -5, bottom: 5, right: 5 }}
-            dragTransition={{ bounceDamping: 10, bounceStiffness: 600 }}
-            className=" w-20"
-            onDragStart={(e) => e.preventDefault()}
-            src="https://skillicons.dev/icons?i=react"
-          />
-          <motion.img
-            onMouseEnter={props.drag}
-            onMouseLeave={props.leave}
-            drag
-            dragConstraints={{ top: -5, left: -5, bottom: 5, right: 5 }}
-            dragTransition={{ bounceDamping: 10, bounceStiffness: 600 }}
-            className=" w-20"
-            src="https://skillicons.dev/icons?i=svelte"
-            onDragStart={(e) => e.preventDefault()}
-          />
-          <motion.img
-            onMouseEnter={props.drag}
-            onMouseLeave={props.leave}
-            drag
-            dragConstraints={{ top: -5, left: -5, bottom: 5, right: 5 }}
-            dragTransition={{ bounceDamping: 10, bounceStiffness: 600 }}
-            className="w-20"
-            src="https://skillicons.dev/icons?i=tailwindcss"
-            onDragStart={(e) => e.preventDefault()}
-          />
-          <motion.img
-            onMouseEnter={props.drag}
-            onMouseLeave={props.leave}
-            drag
-            dragConstraints={{ top: -5, left: -5, bottom: 5, right: 20 }}
-            dragTransition={{ bounceDamping: 10, bounceStiffness: 600 }}
-            className="w-20"
-            src="https://skillicons.dev/icons?i=javascript"
-            onDragStart={(e) => e.preventDefault()}
-          />
-          <motion.img
-            onMouseEnter={props.drag}
-            onMouseLeave={props.leave}
-            drag
-            dragConstraints={{ top: -5, left: -5, bottom: 5, right: 5 }}
-            dragTransition={{ bounceDamping: 10, bounceStiffness: 600 }}
-            className="w-20"
-            src="https://skillicons.dev/icons?i=typescript"
-            onDragStart={(e) => e.preventDefault()}
-          />
-          <motion.img
-            onMouseEnter={props.drag}
-            onMouseLeave={props.leave}
-            drag
-            dragConstraints={{ top: -5, left: -5, bottom: 5, right: 5 }}
-            dragTransition={{ bounceDamping: 10, bounceStiffness: 600 }}
-            className="w-20"
-            src="https://skillicons.dev/icons?i=git"
-            onDragStart={(e) => e.preventDefault()}
-          />
-          <motion.img
-            onMouseEnter={props.drag}
-            onMouseLeave={props.leave}
-            drag
-            dragConstraints={{ top: -5, left: -5, bottom: 5, right: 5 }}
-            dragTransition={{ bounceDamping: 10, bounceStiffness: 600 }}
-            className="w-20"
-            src="https://skillicons.dev/icons?i=github"
-            onDragStart={(e) => e.preventDefault()}
-          />
-          <motion.img
-            onMouseEnter={props.drag}
-            onMouseLeave={props.leave}
-            drag
-            dragConstraints={{ top: -5, left: -5, bottom: 5, right: 5 }}
-            dragTransition={{ bounceDamping: 10, bounceStiffness: 600 }}
-            className="w-20"
-            src="https://skillicons.dev/icons?i=html"
-            onDragStart={(e) => e.preventDefault()}
-          />
-          <motion.img
-            onMouseEnter={props.drag}
-            onMouseLeave={props.leave}
-            drag
-            dragConstraints={{ top: -5, left: -5, bottom: 5, right: 5 }}
-            dragTransition={{ bounceDamping: 10, bounceStiffness: 600 }}
-            className="w-20"
-            src="https://skillicons.dev/icons?i=css"
-            onDragStart={(e) => e.preventDefault()}
-          />
-        </div>
+      <div className="hidden lg:block">
+        <TechStackLogos />
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
