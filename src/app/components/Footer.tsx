@@ -3,15 +3,17 @@ export default function Footer(props: any) {
     <>
       <svg
         viewBox="0 0 1920 300"
-        width="1920"
+        width="100%"
         height="300"
         xmlns="http://www.w3.org/2000/svg"
         version="1.1"
+        preserveAspectRatio="xMidYMid slice"
+        className="overflow-hidden"
       >
         <rect
           x="0"
           y="0"
-          width="100%"
+          width="1920"
           height="300"
           fill={props.mode ? "rgb(2, 15, 31)" : "rgb(23, 95, 116)"}
         ></rect>
