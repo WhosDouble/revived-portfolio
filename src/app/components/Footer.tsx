@@ -53,7 +53,7 @@ export default function Footer(props: any) {
         <h2 className="text-white">
           Devoloped and Designed by{" "}
           <a href="" target="_blank" title="hey :p">
-            @SirRango!(Aka DEVON)
+            @SirRango!
           </a>
         </h2>
       </div>
