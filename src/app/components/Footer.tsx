@@ -3,10 +3,12 @@ export default function Footer(props: any) {
     <>
       <svg
         viewBox="0 0 1920 300"
-        width="1920"
+        width="100%"
         height="300"
         xmlns="http://www.w3.org/2000/svg"
         version="1.1"
+        preserveAspectRatio="xMidYMid slice"
+        className="overflow-hidden"
       >
         <rect
           x="0"
@@ -47,11 +49,11 @@ export default function Footer(props: any) {
         ></path>
       </svg>
 
-      <div className="flex justify-center items-center cursor-default h-20 gap-10 bg-[#000000]">
-        <h2 className="text-white">
+      <div className="flex justify-center items-center cursor-none h-20 gap-10 bg-[#000000]">
+        <h2 className="text-white cursor-none">
           Devoloped and Designed by{" "}
-          <a href="" target="_blank" title="hey :p">
-            @SirRango!(Aka DEVON)
+          <a className="cursor-none" href="" target="_blank" title="hey :p">
+            @SirRango!
           </a>
         </h2>
       </div>

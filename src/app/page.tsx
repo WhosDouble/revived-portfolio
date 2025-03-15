@@ -15,14 +15,14 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 export default function Home() {
-  const [toggleDarkMode, setToggleDarkMode] = useState<boolean>(false);
+  const [toggleDarkMode, setToggleDarkMode] = useState<boolean>(true);
 
   useEffect(() => {
     const savedMode = localStorage.getItem("toggleDarkMode");
     if (savedMode) {
       setToggleDarkMode(JSON.parse(savedMode));
     } else {
-      setToggleDarkMode(false);
+      setToggleDarkMode(true);
     }
   }, []);
   const [mousePosition, setMousePosition] = useState({
@@ -48,7 +48,7 @@ export default function Home() {
       width: 150,
       x: mousePosition.x - 75,
       y: mousePosition.y - 75,
-      backgroundColor: "#FFEB00",
+      backgroundColor: "#ffffff",
       boxShadow: "0 0 10px rgba(255, 255, 255, 0.8)", // Glow effect
       mixBlendMode: "difference",
       clipPath: "circle(50%)",
@@ -132,7 +132,7 @@ export default function Home() {
       <motion.div
         variants={variants}
         animate={cursorVariant}
-        className="SHADOW bg-[#eee] z-[9999] rounded-[50%] h-8 w-8 pointer-events-none fixed top-0 left-0"
+        className=" bg-[#eee] z-[9999] rounded-[50%] h-8 w-8 pointer-events-none fixed top-0 left-0"
       ></motion.div>
 
       <ChangeOne

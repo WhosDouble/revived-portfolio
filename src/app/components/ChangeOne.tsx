@@ -3,12 +3,14 @@ import { ShootingStars } from "./Aceternity/ShootingStars";
 import { StarsBackground } from "./Aceternity/StarsBackGround";
 
 import RevealLinks from "./FramerMotion/FlipWords";
+import { Reveal } from "./FramerMotion/Reveal";
 
 export default function ChangeOne(props: any) {
   const words = [
     "Hello",
     "Hola",
     "Γεια σου",
+    "Buna",
     "Bonjour",
     "Greetings",
     "こんにちは",
@@ -21,30 +23,35 @@ export default function ChangeOne(props: any) {
     ? { from: "#164e63", to: "#1e3a8a" }
     : { from: "#06b6d4", to: "#3b82f6" };
   return (
-    <div className="flex flex-col text-white dark:bg-night-sky bg-sunny-sky justify-center relative items-center h-[1000px] w-full">
+    <div className="flex flex-col text-white dark:bg-night-sky bg-sunny-sky justify-center relative items-center h-[1000px] w-full cursor-none">
       <h1
         onMouseEnter={props.enter}
         onMouseLeave={props.leave}
-        className="sm:mb-10 text-center text-5xl z-10"
+        className="sm:mb-10 text-center text-5xl z-50"
       >
-        <FlipWords words={words} />
-        I'm{" "}
-        <RevealLinks
-          size={"text-4xl sm:text-5xl md:text-7xl lg:text-8xl"}
-          word="devon"
-        />
+        <Reveal animationType="slide">
+          <FlipWords words={words} />
+          I'm{" "}
+          <RevealLinks
+            size={"text-4xl sm:text-5xl md:text-7xl lg:text-8xl cursor-none"}
+            word="rango"
+          />
+        </Reveal>
       </h1>
-      <p className="text-stone-200 z-10 p-6 text-center">
-        A <span className="font-bold">Frontend Engineer</span> with a passion
-        for creating responsive and engaging user experiences
-      </p>
-      <p className="text-gray-400 z-40 group relative cursor-pointer text-xl pt-20">
-        <a className="z-50" href="#projects">
+
+      <Reveal animationType="slide2">
+        <p className="text-stone-200 z-10 p-6 text-center cursor-none">
+          A <span className="font-bold">Frontend Engineer</span> with a passion
+          for creating responsive and engaging user experiences
+        </p>
+      </Reveal>
+      <p className="text-gray-400 z-40 group relative text-xl pt-20 cursor-none">
+        <a className="z-50 cursor-none" href="#projects">
           (scroll to start)
         </a>
 
         <svg
-          className="opacity-0 group-hover:opacity-100 animate-bounce transition-opacity absolute top-40"
+          className="opacity-0 group-hover:opacity-100 animate-bounce transition-opacity cursor-none absolute top-40"
           xmlns="http://www.w3.org/2000/svg"
           width="24"
           height="24"
