@@ -149,7 +149,7 @@ export default function ChangeTwo(props: any) {
 
             <img
               className="absolute top-0 opacity-0 transition-opacity group-hover:opacity-100 object-cover w-full h-full rounded"
-              src="null"
+              src="/bexgenssV2.png"
               alt=""
             />
             <a href="https://unrivaled-cat-9182f4.netlify.app" target="_blank">
