@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .rotate-3d {
+    transform: rotate3d(1, 1, 1, 30deg); /* Example: Rotate on X, Y, Z axes */
+    transform-style: preserve-3d;
+  }
+}
+
 html {
   cursor: none;
 }
@@ -16,6 +23,15 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+#triple-info {
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+#lean {
+  transform: rotateY(-90deg) translateZ(50px);
 }
 
 body {

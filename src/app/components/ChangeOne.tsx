@@ -3,12 +3,14 @@ import { ShootingStars } from "./Aceternity/ShootingStars";
 import { StarsBackground } from "./Aceternity/StarsBackGround";
 
 import RevealLinks from "./FramerMotion/FlipWords";
+import { Reveal } from "./FramerMotion/Reveal";
 
 export default function ChangeOne(props: any) {
   const words = [
     "Hello",
     "Hola",
     "Γεια σου",
+    "Buna",
     "Bonjour",
     "Greetings",
     "こんにちは",
@@ -25,19 +27,24 @@ export default function ChangeOne(props: any) {
       <h1
         onMouseEnter={props.enter}
         onMouseLeave={props.leave}
-        className="sm:mb-10 text-center text-5xl z-10"
+        className="sm:mb-10 text-center text-5xl z-50"
       >
-        <FlipWords words={words} />
-        I'm{" "}
-        <RevealLinks
-          size={"text-4xl sm:text-5xl md:text-7xl lg:text-8xl cursor-none"}
-          word="rango"
-        />
+        <Reveal animationType="slide">
+          <FlipWords words={words} />
+          I'm{" "}
+          <RevealLinks
+            size={"text-4xl sm:text-5xl md:text-7xl lg:text-8xl cursor-none"}
+            word="rango"
+          />
+        </Reveal>
       </h1>
-      <p className="text-stone-200 z-10 p-6 text-center cursor-none">
-        A <span className="font-bold">Frontend Engineer</span> with a passion
-        for creating responsive and engaging user experiences
-      </p>
+
+      <Reveal animationType="slide2">
+        <p className="text-stone-200 z-10 p-6 text-center cursor-none">
+          A <span className="font-bold">Frontend Engineer</span> with a passion
+          for creating responsive and engaging user experiences
+        </p>
+      </Reveal>
       <p className="text-gray-400 z-40 group relative text-xl pt-20 cursor-none">
         <a className="z-50 cursor-none" href="#projects">
           (scroll to start)

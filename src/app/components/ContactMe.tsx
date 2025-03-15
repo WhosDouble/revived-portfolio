@@ -14,17 +14,17 @@ function ContactMe(props: any) {
           word={"< Contact >"}
         />
       </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full p-8">
         <Polaroid
           description={"CLICK ME TO GO TO MY EMAIL"}
-          img={"/mountain.png"}
+          img={"/newgmail.png"}
           dragText={"(pssst drag me)"}
           psText={"YOU LISTENED HURRAY CONFETTI"}
           rotate={7}
         />
         <Polaroid
           description={"CLICK ME TO GO TO MY LINKEDIN"}
-          img={"/undawata.png"}
+          img={"/linkedinV2.png"}
           dragText={"(dont listen to the first one dont drag)"}
           psText={"great now we gotta clean this up thanks..."}
           rotate={-3}

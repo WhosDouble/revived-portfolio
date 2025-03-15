@@ -22,7 +22,7 @@ export default function Home() {
     if (savedMode) {
       setToggleDarkMode(JSON.parse(savedMode));
     } else {
-      setToggleDarkMode(false);
+      setToggleDarkMode(true);
     }
   }, []);
   const [mousePosition, setMousePosition] = useState({

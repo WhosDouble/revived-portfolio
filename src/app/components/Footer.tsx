@@ -49,10 +49,10 @@ export default function Footer(props: any) {
         ></path>
       </svg>
 
-      <div className="flex justify-center items-center cursor-default h-20 gap-10 bg-[#000000]">
-        <h2 className="text-white">
+      <div className="flex justify-center items-center cursor-none h-20 gap-10 bg-[#000000]">
+        <h2 className="text-white cursor-none">
           Devoloped and Designed by{" "}
-          <a href="" target="_blank" title="hey :p">
+          <a className="cursor-none" href="" target="_blank" title="hey :p">
             @SirRango!
           </a>
         </h2>

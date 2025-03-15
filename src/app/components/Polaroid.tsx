@@ -45,7 +45,7 @@ const Polaroid = (props: any) => {
       setFadeOut(false);
     }, 1500);
   };
-  console.log(confettiOn);
+
   return (
     <div className="relative">
       {confettiOn && (
@@ -68,7 +68,7 @@ const Polaroid = (props: any) => {
 
       <motion.div
         drag
-        initial={{ x: props.initialX, y: props.initialY, rotate: props.rotate }}
+        initial={{ rotate: props.rotate }}
         animate={{
           rotate: activeAnimation ? 0 : props.rotate, // Reset rotation on drag
         }}
