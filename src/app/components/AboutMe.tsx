@@ -106,10 +106,10 @@ export default function AboutMe(props: any) {
               </h2>
               <p className="text-left" id="lean">
                 I thrive on tackling challenges and finding creative solutions
-                to complex problems. Whether it’s debugging code, optimizing
+                to complex problems. Whether its debugging code, optimizing
                 performance, or implementing new features, I approach every task
                 with persistence and curiosity. My ability to quickly adapt to
-                new tools and frameworks ensures that I’m always equipped to
+                new tools and frameworks ensures that Im always equipped to
                 handle the demands of a fast-paced development environment.
               </p>
             </div>

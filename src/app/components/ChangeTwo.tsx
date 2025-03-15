@@ -31,9 +31,11 @@ export default function ChangeTwo(props: any) {
           >
             <div className=" w-[65%] h-[288px] opacity-0 z-40 p-5 -right-20 transition-all group-hover:opacity-100 group-hover:right-0 absolute bg-black bg-opacity-60">
               <h1 className="text-white text-[35px]">made with</h1>
-              <img src="https://skillicons.dev/icons?i=react,next,tailwindcss,vercel,typescript,firebase,html" />
+              <img src="https://skillicons.dev/icons?i=react,next,tailwindcss,vercel,typescript,firebase,jest,html" />
               <h2 className="text-white pt-5">
-                an app that lets you search for jobs all around the world
+                Portal is an app that lets you search for your perfect job all
+                around the world and has other features like tracking your
+                applied jobs
               </h2>
             </div>
             <img
@@ -63,10 +65,10 @@ export default function ChangeTwo(props: any) {
           >
             <div className="w-[65%] h-[288px] opacity-0 z-40 p-5 -right-20 transition-all group-hover:opacity-100 group-hover:right-0 absolute bg-black bg-opacity-60">
               <h1 className="text-white text-[35px]">made with</h1>
-              <img src="https://skillicons.dev/icons?i=vercel,javascript,css,html" />
+              <img src="https://skillicons.dev/icons?i=react,javascript,tailwindcss,vercel,css,html" />
               <h2 className="text-white pt-5">
-                a technical documentation website thats fully responsive for all
-                screens(no live Demo rn).
+                a notes app where you can type markup and it saves your notes
+                using firebase
               </h2>
             </div>
             <img
@@ -74,12 +76,12 @@ export default function ChangeTwo(props: any) {
               src={projectTwo}
               alt=""
             />
-            <a href="#" target="">
+            <a href="https://notedxyz.netlify.app" target="_blank">
               <button className="absolute top-40 left-6 opacity-0 transition-opacity group-hover:opacity-100 bg-black text-cyan-800 p-3 z-10 cursor-none">
                 (Live Demo)
               </button>
             </a>
-            <a href="#" target="">
+            <a href="https://github.com/WhosDouble/K-notes" target="_blank">
               <button className="absolute bottom-6 left-6 opacity-0 transition-opacity group-hover:opacity-100 bg-black text-cyan-800 p-3 z-10 cursor-none">
                 (code)
               </button>
@@ -97,10 +99,10 @@ export default function ChangeTwo(props: any) {
           >
             <div className="w-[65%] h-[288px] opacity-0 z-40 p-5 -right-20 transition-all group-hover:opacity-100 group-hover:right-0 absolute bg-black bg-opacity-60">
               <h1 className="text-white text-[35px]">made with</h1>
-              <img src="https://skillicons.dev/icons?i=firebase,react,vite,javascript,css,html" />
+              <img src="https://skillicons.dev/icons?i=javascript,css,html" />
               <h2 className="text-white pt-5">
-                a notes app where you can type markup and it saves your notes
-                using firebase
+                A technical document for Intergrated API no Live Demo at this
+                moment one coming soon.
               </h2>
             </div>
             <img
@@ -110,14 +112,10 @@ export default function ChangeTwo(props: any) {
             />
             <img
               className="absolute top-0 opacity-0 transition-opacity group-hover:opacity-100 object-cover w-full h-full rounded"
-              src="/Noted.png"
+              src="null"
               alt=""
             />
-            <a href="https://notedxyz.netlify.app" target="_blank">
-              <button className="absolute top-40 left-6 opacity-0 transition-opacity group-hover:opacity-100 bg-black text-cyan-800 p-3 z-10 cursor-none">
-                (Live Demo)
-              </button>
-            </a>
+
             <a href="#">
               <button className="absolute bottom-6 left-6 opacity-0 transition-opacity group-hover:opacity-100 bg-black text-cyan-800 p-3 z-10 cursor-none">
                 (code)
@@ -137,10 +135,10 @@ export default function ChangeTwo(props: any) {
               className="w-[65%] h-[288px] opacity-0 z-40 p-5 -right-20 transition-all group-hover:opacity-100 group-hover:right-0 absolute bg-black bg-opacity-60"
             >
               <h1 className="text-white text-[35px]">made with</h1>
-              <img src="https://skillicons.dev/icons?i=netlify,javascript,css,html" />
+              <img src="https://skillicons.dev/icons?i=svelte,tailwindcss,vite,javascript,netlify,css,html" />
               <h2 className="text-white pt-5">
-                a eCommerce website based on mens fragrances thats fully
-                <span>responsive</span>
+                A fully Responsive Saas website based on embedded integration
+                and has an interactive design
               </h2>
             </div>
             <img
