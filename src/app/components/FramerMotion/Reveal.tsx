@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
 
 interface Props {
-  children: TSX.Element;
+  children: React.ReactNode;
   animationType?:
     | "fade"
     | "slide"
