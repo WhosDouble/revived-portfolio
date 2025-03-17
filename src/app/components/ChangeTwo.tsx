@@ -6,7 +6,7 @@ export default function ChangeTwo(props: any) {
   const projectOne = "/jobsearch.png";
   const projectTwo = "/Noted.png";
   const projectThree = "/ss2.png";
-  const projectFour = "/bexgenssV2.png";
+  const projectFour = "/bexgenSSV2.png";
   return (
     <div className="flex w-full gap-7 flex-col bg-gradient-to-r from-cyan-500 to-blue-500 dark:bg-gradient-to-r dark:from-cyan-900 dark:to-blue-900 backdrop-blur-md cursor-none">
       <h1
@@ -152,7 +152,7 @@ export default function ChangeTwo(props: any) {
               src="/bexgenssV2.png"
               alt=""
             />
-            <a href="https://unrivaled-cat-9182f4.netlify.app" target="_blank">
+            <a href="https://nex-gen-website.vercel.app" target="_blank">
               <button className="absolute top-40 left-6 opacity-0 transition-opacity group-hover:opacity-100 bg-black text-cyan-800 p-3 z-10 cursor-none">
                 (Live Demo)
               </button>
